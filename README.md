@@ -1,4 +1,4 @@
-# loginapp
+# Vue Application
 
 ## Project setup
 ```
