@@ -1,11 +1,13 @@
 import Vue from "vue";
-import Router from "vue-router";
 
-// components
+import Router from "vue-router";
+import axios from "axios";
+
+// views for render
 import About from "./views/About";
 import Home from "./views/Home";
 
-Vue.use(Router);
+Vue.use(Router, axios);
 
 export default new Router({
   mode: "history",

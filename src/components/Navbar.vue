@@ -4,10 +4,10 @@
       <div class="navbar-brand text-warning">Home Page</div>
       <div class="content ml-auto">
         <div class="btn btn-transparent">
-          <a href="/" class="nav-link">Home</a>
+          <router-link to="/" class="nav-link">Home</router-link>
         </div>
         <div class="btn btn-transparent">
-          <a href="/about" class="nav-link">About</a>
+          <router-link to="/about" class="nav-link">About</router-link>
         </div>
       </div>
     </div>
