@@ -3,6 +3,9 @@
     <Form v-on:submit.prevent="submit" class="form-group">
       <div class="form-label">Details for Edit ...</div>
       <input type="text" v-model="content" class="form-control" />
+      <div class="form-label">Content Details</div>
+
+      <input type="text" v-model="val" class="form-control" />
       <button type="submit" class="btn btn-info btn-block">Edit Data</button>
     </Form>
   </div>
@@ -15,12 +18,13 @@ export default {
   name: "Edit",
   data() {
     return {
-      content: ""
+      content: "",
+      val: ""
     };
   },
   methods: {
     submit() {
-      this.$emit("channgecolor", this.content);
+      this.$emit("channgecolor", this.$data);
       // edit background
     }
   }

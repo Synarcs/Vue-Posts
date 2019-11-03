@@ -24,7 +24,7 @@
             <p class="card-body">{{post.title}}</p>
             <div class="card-actions">
               <div class="btn btn-danger" @click="deleteVal(post)">Delete</div>
-              <div class="btn btn-info ml-2" @click="editVal">Edit</div>
+              <div class="btn btn-info ml-2" @click="editVal">Change</div>
             </div>
           </div>
         </div>
@@ -91,9 +91,10 @@ export default {
     },
     color(cols) {
       console.log(cols);
+      // map is a boolean based the check on each ele in arr
       this.posts.forEach(val => {
-        if (val.title === cols) {
-          val.title = "React is Best";
+        if (val.title === cols.content) {
+          val.title = cols.val;
         }
       });
     }
